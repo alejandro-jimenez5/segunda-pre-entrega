@@ -117,5 +117,26 @@
 
 }
 
+.lorem{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: beige;
+    padding: 60px;
+}
+
+.textoh1{
+    text-align: center;
+    color: blue;
+    padding-right: 180px;
+    margin-top: 170px;
+
+}
+
+
+.logo{
+    width: 600px;
+}
 
 
