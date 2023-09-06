@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.carousel-item{
+    max-height: 600px;
+
+}
+
+
+
+.containere{
+    background-image: url(../fotos/marisol.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: beige;
+    padding: 235px;
+    margin-bottom: 70px;
+}
+
+
+.container2__carde{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6FFE3;
+}
+
+.carde{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    backdrop-filter: bluer(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+
+}
+
+.carde:hover{
+    transform: translateY(-10px)
+}
+
+.carde:hover .cover__carde img{
+    transform: scale(1.1);
+}
+
+.cover__carde{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.cover__carde img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.carde h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+}
+
+.carde p{
+    margin-top: 30px;
+    font-size: 15px;
+    color: black;
+    letter-spacing: o.4px;
+    text-align: center;
+}
+
+
+.containere2{
+    background-image: url(../fotos/footer3.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: beige;
+    padding: 235px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+.rody{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 30px;
+    margin-left: 175px;
+}
+
+
+
+
+.lorena .puppy  .roling a{
+        display: inline-block;
+        text-decoration: none;
+        line-height: 25px;
+        color: black;
+        margin-left: 100px;
+        transition: all 300ms ease;
+        justify-content: space-between;
+        font-size: 25px;
+}
+
+.lorena .puppy  .roling a:hover{
+    color: blue;
+
+}
+
+
+
