@@ -5,7 +5,6 @@
 }
 
 
-
 .carousel-item{
     max-height: 600px;
 
@@ -95,14 +94,6 @@
 
 
 
-.lorem{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: beige;
-    padding: 50px;
-}
 
 .textoh1{
     text-align: center;
@@ -178,13 +169,14 @@
 
 
 .containere2x{
-    background-image: url(../fotos/footer3.jpg);
+    background-image: url(../fotos/darren-nunis-cxE7SXKnzv0-unsplash.jpg);
     background-position: center center;
     background-size: cover;
-    color: beige;
+    color: black;
     text-align:center ;
-    padding: 235px;
+    padding: 180px;
     object-fit: cover;
+
 
 }
 
@@ -209,6 +201,7 @@ main{
 }
 
 @media screen and (max-width: 500px) {
+    
     .containere2 {
         display: flex;
         flex-wrap: wrap;
@@ -231,7 +224,15 @@ main{
 
 }
 
+}
 
+@media screen and (max-width: 500px) {
+
+    .containere2x {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
 
     
     
