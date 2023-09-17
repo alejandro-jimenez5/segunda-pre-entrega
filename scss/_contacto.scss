@@ -1,0 +1,38 @@
+main{
+    margin-bottom:150px ;
+    .first_col{
+        background-color: aqua;
+        height: 550px;
+        position: relative;
+        width: 550px;
+        left: 155px;
+        top: 171px;
+        border-radius: 20px;
+    }
+    
+    .img-fluid{
+        border-radius: 20px;
+    }
+         
+
+
+}
+
+
+@media screen and (max-width:600px) {
+main{
+    .first_col{
+        position: initial;
+        left: 0;
+    }
+    
+
+}
+
+
+}
+
+
+
+
+

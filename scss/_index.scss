@@ -1,0 +1,188 @@
+.carousel-item{
+    max-height: 600px;
+
+}
+
+.containere{
+    background-image: url(../fotos/marisol.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 100px;
+    object-fit: cover;
+    height: 500px;
+    .textoh1{
+        text-align: center;
+        position:relative;
+        top: 200px;
+        color: white;
+    }
+}
+
+main{
+    .container2__carde{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .carde{
+            width: 350px;
+            margin: 10px;
+            padding: 20px;
+            backdrop-filter: bluer(5px);
+            -webkit-backdrop-filter: blur(5px);
+            transition: all 300ms; 
+            &:hover{
+                transform: translateY(-10px)
+            }
+
+            .titulo{
+                font-size: 30px;
+                font-weight: 600;
+                margin-top: 20px;
+                color: black;
+                text-align: center;
+            }
+            
+            .parrafo{
+                margin-top: 30px;
+                font-size: 15px;
+                color: black;
+                letter-spacing: 0.4px;
+                text-align: center;
+            }
+            
+            .cover__carde{
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+
+                .photo{
+                    width: 110%;
+                    transition: all 300ms;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+            }
+    
+        }
+    }
+}
+
+
+.containere2{
+    background-image: url(../fotos/pexels-the-lazy-artist-gallery-1451122.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: beige;
+    margin-bottom: 100px;
+    object-fit: cover;
+    height: 500px;
+    .textoh1{
+        text-align: center;
+        position:relative;
+        top: 200px;
+    }
+    
+}
+
+.pepe{
+    font-size: 15px;
+    text-align: center;
+    .logo{
+        width: 250px;
+    }
+}
+
+
+
+.container3__carde{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:aqua;
+
+                .cardex{
+                    width: 350px;
+                margin: 35px;
+                padding: 45px;
+
+                .logotipo{
+                    width: 180px;
+                    margin-left: 60px;
+                    margin-top: 25px;
+                }
+
+                .btn2{
+                    margin-top: 50px;
+                    text-align: center;
+                    justify-content: center;
+                }
+                
+                .btn3{
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                
+                }
+                
+                .btn4{
+                    text-align:center;
+                    justify-content: center;
+                    margin-top: 50px;
+                    
+                }
+            }
+}
+
+
+
+
+.containere2x{
+    background-image: url(../fotos/darren-nunis-cxE7SXKnzv0-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 100px;
+    object-fit: cover;
+    height: 500px;
+    .textoh1{
+        text-align: center;
+        position:relative;
+        top: 200px;
+        color: black;
+    }
+
+
+
+}
+
+
+.lolo{
+    .koko{
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .face{
+            text-align: center;
+            margin-right: 30px;
+
+        }
+
+        .insta{
+            text-align: center;
+            margin-left: 30px;
+
+        }
+
+    }
+}
+
+
+
+
