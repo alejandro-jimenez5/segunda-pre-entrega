@@ -1,41 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&display=swap");
+body {
+  font-family: "Bitter", serif;
+  font-family: "Oswald", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 500px) {
-  .containere2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .containere {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+header {
+  background-color: aqua;
 }
-@media screen and (max-width: 500px) {
-  .containere2x {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+header .vivir-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+header .vivir-content .vivir-text h1 {
+  font-size: 140px;
+  line-height: 150px;
+  color: black;
+}
+header .vivir-content .vivir-text p {
+  font-size: 18px;
+  color: black;
+}
+
+main .luz {
+  padding: 100px 0;
+  position: relative;
+  background-color: aqua;
+}
+main .luz .luz-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: black;
+  text-transform: uppercase;
+  padding: 0 250px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .luz .luz-content {
+  text-align: center;
+}
+main .luz .luz-content .luz-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .luz .luz-content .luz-group .luz-1 {
+  width: 350px;
+  margin: 10px;
+  padding: 30px;
+  backdrop-filter: bluer(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 300ms;
+}
+main .luz .luz-content .luz-group .luz-1:hover {
+  transform: translateY(-10px);
+}
+main .luz .luz-content .luz-1 h3 {
+  padding: 20px;
+}
+main .luz .luz-content .luz-1 img {
+  width: 200px;
+}
+
+footer .lolo .koko {
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .lolo .koko .face {
+  text-align: center;
+  margin-right: 30px;
+}
+footer .lolo .koko .insta {
+  text-align: center;
+  margin-left: 30px;
+}
+
 main {
   margin-bottom: 150px;
 }
 main .first_col {
-  background-color: aqua;
+  background-color: beige;
   height: 550px;
   position: relative;
   width: 550px;
   left: 155px;
   top: 171px;
-  border-radius: 20px;
-}
-main .img-fluid {
   border-radius: 20px;
 }
 
@@ -45,154 +106,169 @@ main .img-fluid {
     left: 0;
   }
 }
-.carousel-item {
-  max-height: 600px;
+@media screen and (max-width: 991px) {
+  .containere2 {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .containere {
+    display: block;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .containere2x {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .luz {
+    padding: 30px;
+  }
+  .luz-content h2 {
+    padding: 0;
+  }
+  .text-p {
+    padding: 0;
+  }
+  .luz-group {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container-transitar2 {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content2 {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .vivir-content {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+main .pepe {
+  font-size: 15px;
+  text-align: center;
+}
+main .pepe .logo {
+  width: 350px;
 }
 
-.containere {
-  background-image: url(../fotos/marisol.jpg);
-  background-position: center center;
+.poper {
+  background-color: skyblue;
+}
+
+.mary {
+  background-color: #FFD1DC;
+}
+
+main section {
+  font-size: 15px;
+  text-align: center;
+}
+main section .logo2 {
+  width: 350px;
+}
+main .container-transitar {
+  background-image: url("../fotos/pexels-elina-fairytale-3822906.jpg");
+  background-position: top center;
   background-size: cover;
-  margin-bottom: 100px;
   object-fit: cover;
   height: 500px;
 }
-.containere .textoh1 {
+main .container-transitar .container-txt {
   text-align: center;
   position: relative;
-  top: 200px;
+  top: 100px;
   color: white;
+  font-size: 70px;
 }
-
-main .container2__carde {
-  width: 100%;
+main .content {
+  padding: 100px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
 }
-main .container2__carde .carde {
-  width: 350px;
-  margin: 10px;
+main .content .content-txt h1 {
+  font-size: 40px;
+  color: black;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+main .content .content-txt p {
+  font-size: 20px;
+  color: black;
+  position: relative;
+  top: 120px;
+  left: 40px;
+  width: 90%;
+  text-align: center;
+}
+main .container-transitar2 {
+  background-image: url("../fotos/pexels-hatice-baran-14252564.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 250px;
+  margin-top: 250px;
+}
+main .container-transitar2 .container-txt2 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 43px;
+  text-transform: uppercase;
+  position: relative;
+  top: 200px;
+}
+main .content2 {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 80px;
+}
+main .content2 .content-txt3 h1 {
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+}
+main .content2 .content-txt2 {
+  font-size: 20px;
+  color: black;
   padding: 20px;
-  backdrop-filter: bluer(5px);
-  -webkit-backdrop-filter: blur(5px);
-  transition: all 300ms;
-}
-main .container2__carde .carde:hover {
-  transform: translateY(-10px);
-}
-main .container2__carde .carde .titulo {
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 20px;
-  color: black;
   text-align: center;
 }
-main .container2__carde .carde .parrafo {
-  margin-top: 30px;
-  font-size: 15px;
-  color: black;
-  letter-spacing: 0.4px;
-  text-align: center;
+main #header {
+  background: url(../fotos/portada\ femenina\ flores\ vintage\ beige\ .png) top/cover no-repeat;
 }
-main .container2__carde .carde .cover__carde {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
+main .carousel-inner h1 {
+  font-size: 60px;
+  font-family: var(--lg-font);
 }
-main .container2__carde .carde .cover__carde .photo {
-  width: 110%;
-  transition: all 300ms;
+main .carousel-item .btn {
+  border-color: #fff !important;
 }
-main .container2__carde .carde .cover__carde .photo:hover {
-  transform: scale(1.1);
-}
-
-.containere2 {
-  background-image: url(../fotos/pexels-the-lazy-artist-gallery-1451122.jpg);
-  background-position: center center;
-  background-size: cover;
-  color: beige;
-  margin-bottom: 100px;
-  object-fit: cover;
-  height: 500px;
-}
-.containere2 .textoh1 {
-  text-align: center;
-  position: relative;
-  top: 200px;
-}
-
-.pepe {
-  font-size: 15px;
-  text-align: center;
-}
-.pepe .logo {
-  width: 250px;
-}
-
-.container3__carde {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: aqua;
-}
-.container3__carde .cardex {
-  width: 350px;
-  margin: 35px;
-  padding: 45px;
-}
-.container3__carde .cardex .logotipo {
-  width: 180px;
-  margin-left: 60px;
-  margin-top: 25px;
-}
-.container3__carde .cardex .btn2 {
-  margin-top: 50px;
-  text-align: center;
-  justify-content: center;
-}
-.container3__carde .cardex .btn3 {
-  text-align: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-.container3__carde .cardex .btn4 {
-  text-align: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.containere2x {
-  background-image: url(../fotos/darren-nunis-cxE7SXKnzv0-unsplash.jpg);
-  background-position: center center;
-  background-size: cover;
-  margin-bottom: 100px;
-  object-fit: cover;
-  height: 500px;
-}
-.containere2x .textoh1 {
-  text-align: center;
-  position: relative;
-  top: 200px;
-  color: black;
-}
-
-.lolo .koko {
-  text-align: center;
-  font-size: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.lolo .koko .face {
-  text-align: center;
-  margin-right: 30px;
-}
-.lolo .koko .insta {
-  text-align: center;
-  margin-left: 30px;
+main .carousel-item .btn:hover {
+  border-color: var(--pink) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

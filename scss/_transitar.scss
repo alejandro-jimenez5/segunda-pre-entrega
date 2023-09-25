@@ -1,0 +1,131 @@
+main {
+    section {
+        font-size: 15px;
+        text-align: center;
+
+        .logo2 {
+            width: 350px;
+        }
+    }
+
+    .container-transitar{
+        background-image: url("../fotos/pexels-elina-fairytale-3822906.jpg");
+        background-position:top center ;
+        background-size: cover;
+        object-fit: cover;
+        height: 500px;
+
+        .container-txt{
+            text-align: center;
+            position: relative;
+            top: 100px;
+            color: white;
+            font-size: 70px;
+        }
+    }
+
+
+    .content{
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 150px;        
+    
+    .content-txt h1{
+        font-size: 40px;
+        color: black;
+        position: relative;
+        top: 100px;
+        text-align: center;
+    
+    }
+
+    .content-txt p{
+        font-size: 20px;
+        color: black;
+        position: relative;
+        top: 120px;
+        left: 40px;
+        width: 90%;
+        text-align: center;
+
+
+
+      
+    }
+
+
+}
+
+
+.container-transitar2{
+    background-image: url("../fotos/pexels-hatice-baran-14252564.jpg");
+    background-position:center   ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 250px;
+    margin-top: 250px;
+
+    .container-txt2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 43px;
+        text-transform: uppercase;
+        position: relative;
+        top: 200px;
+    }
+}
+
+.content2{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+
+
+.content-txt3 h1{
+    font-size: 40px;
+    padding: 30px ;
+    text-align: center;
+
+}
+
+.content-txt2{
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+
+
+
+
+  
+}
+
+
+}
+
+#header{
+    background: url(../fotos/portada\ femenina\ flores\ vintage\ beige\ .png) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+
+
+}
