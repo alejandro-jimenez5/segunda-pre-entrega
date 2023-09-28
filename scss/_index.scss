@@ -1,55 +1,125 @@
-
-
-
 header {
-    background-color: aqua;
+    background-color: white;
 
     .vivir-content {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
 
+        .vivir-text {
+            width: 40%;
+            margin-top: 70px;
+            margin-bottom: 50px;
 
-        .vivir-text h1 {
-            font-size: 140px;
-            line-height: 150px;
-            color: black;
-            
+            .TipografiaSecundaria {
+                text-transform: uppercase;
+                font-size: 105px;
+                padding: 15px;
+                font-family: $TipografiaSecundaria ;
+            }
+
+            .TipografiaParrafo {
+                padding: 15px;
+                font-family: $TipografiaParrafo;
+            }
         }
 
-        .vivir-text p {
-            font-size: 18px;
-            color: black;
-            
+
+        .vivir-img img {
+            width: 450px;
+            margin-inline-start: 300px;
         }
-
-
     }
 }
 
+
 main {
+    .salto-terno {
+        background-color: #F4F4F4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+        .salto-txt {
+            width: 50%;
+            margin-left: 250px;
+
+            .TipografiaSecundaria {
+                text-transform: uppercase;
+                padding: 15px;
+                font-family: $TipografiaSecundaria;
+            }
+
+            .TipografiaParrafo {
+                font-family: $TipografiaParrafo;
+                font-size: 16px;
+            }
+
+        }
+
+        .salto-img img {
+            width: 400px;
+
+        }
+
+    }
+
+
+
+
+    .firme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+
+
+        .firme-txt {
+            align-items: center;
+            text-align: center;
+            width: 70%;
+
+
+            .TipografiaSecundaria {
+                padding: 15px;
+                font-family: $TipografiaSecundaria;
+
+            }
+
+
+        }
+
+        .firme-img img {
+            width: 400px;
+            margin-bottom: 100px;
+        }
+    }
+
 
 
     .luz {
         padding: 100px 0;
         position: relative;
-        background-color: aqua;
-
-        .luz-content h2 {
-            font-size: 55px;
-            line-height: 70px;
-            color: black;
-            text-transform: uppercase;
-            padding: 0 250px;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
+        background-color: #fdf5e6;
 
         .luz-content {
             text-align: center;
+
+            .TipografiaSecundaria {
+                font-size: 55px;
+                line-height: 70px;
+                color: black;
+                text-transform: uppercase;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-family: $TipografiaSecundaria;
+            }
 
             .luz-group {
                 width: 100%;
@@ -64,6 +134,15 @@ main {
                     backdrop-filter: bluer(5px);
                     -webkit-backdrop-filter: blur(5px);
                     transition: all 300ms;
+
+                    .TipografiaParrafo {
+                        font-family: $TipografiaParrafo ;
+                    }
+
+                    .Tipografiah3 {
+                        font-family: $Tipografiah3;
+
+                    }
 
                     &:hover {
                         transform: translateY(-10px)
@@ -90,7 +169,17 @@ main {
 
 
 footer {
+    .foo-txt {
+        .TipografiaParrafo {
+            font-family: $TipografiaParrafo;
+        }
+    }
+
     .lolo {
+        .TipografiaSecundaria {
+            font-family: $TipografiaSecundaria;
+        }
+
         .koko {
             text-align: center;
             font-size: 30px;
@@ -113,3 +202,84 @@ footer {
         }
     }
 }
+
+
+
+@media (Max-width:991px) {
+
+    header {
+        .vivir-content {
+
+            .vivir-text {
+
+                .TipografiaSecundaria {
+                    font-family: $TipografiaSecundaria;
+                    font-size: 70px;
+                }
+
+                .TipografiaParrafo {
+                    font-size: 25px;
+                    display: none;
+                    font-family: $TipografiaParrafo ;
+                }
+
+            }
+
+            .vivir-img img{
+                display: none; 
+
+            }
+
+        }
+    }
+
+
+
+
+
+    main {
+        .salto-terno {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+            .salto-txt {
+                text-align: center;
+                align-items: center;
+                margin-right: 240px;
+
+            }
+
+
+
+
+        }
+
+        .firme{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+
+            .firme-txt{
+                text-align: center;
+                align-items: center;
+
+
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+}
+

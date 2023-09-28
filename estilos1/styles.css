@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Oswald&display=swap");
-body {
-  font-family: "Bitter", serif;
-  font-family: "Oswald", sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,41 +10,96 @@ body {
 }
 
 header {
-  background-color: aqua;
+  background-color: white;
 }
 header .vivir-content {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
-header .vivir-content .vivir-text h1 {
-  font-size: 140px;
-  line-height: 150px;
-  color: black;
+header .vivir-content .vivir-text {
+  width: 40%;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
-header .vivir-content .vivir-text p {
-  font-size: 18px;
-  color: black;
+header .vivir-content .vivir-text .TipografiaSecundaria {
+  text-transform: uppercase;
+  font-size: 105px;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+}
+header .vivir-content .vivir-text .TipografiaParrafo {
+  padding: 15px;
+  font-family: "Lora", serif;
+}
+header .vivir-content .vivir-img img {
+  width: 450px;
+  margin-inline-start: 300px;
 }
 
+main .salto-terno {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .salto-terno .salto-txt {
+  width: 50%;
+  margin-left: 250px;
+}
+main .salto-terno .salto-txt .TipografiaSecundaria {
+  text-transform: uppercase;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+}
+main .salto-terno .salto-txt .TipografiaParrafo {
+  font-family: "Lora", serif;
+  font-size: 16px;
+}
+main .salto-terno .salto-img img {
+  width: 400px;
+}
+main .firme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+main .firme .firme-txt {
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+main .firme .firme-txt .TipografiaSecundaria {
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+}
+main .firme .firme-img img {
+  width: 400px;
+  margin-bottom: 100px;
+}
 main .luz {
   padding: 100px 0;
   position: relative;
-  background-color: aqua;
+  background-color: #fdf5e6;
 }
-main .luz .luz-content h2 {
+main .luz .luz-content {
+  text-align: center;
+}
+main .luz .luz-content .TipografiaSecundaria {
   font-size: 55px;
   line-height: 70px;
   color: black;
   text-transform: uppercase;
-  padding: 0 250px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-main .luz .luz-content {
-  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 main .luz .luz-content .luz-group {
   width: 100%;
@@ -61,6 +115,12 @@ main .luz .luz-content .luz-group .luz-1 {
   -webkit-backdrop-filter: blur(5px);
   transition: all 300ms;
 }
+main .luz .luz-content .luz-group .luz-1 .TipografiaParrafo {
+  font-family: "Lora", serif;
+}
+main .luz .luz-content .luz-group .luz-1 .Tipografiah3 {
+  font-family: "Oswald", sans-serif;
+}
 main .luz .luz-content .luz-group .luz-1:hover {
   transform: translateY(-10px);
 }
@@ -71,6 +131,12 @@ main .luz .luz-content .luz-1 img {
   width: 200px;
 }
 
+footer .foo-txt .TipografiaParrafo {
+  font-family: "Lora", serif;
+}
+footer .lolo .TipografiaSecundaria {
+  font-family: "Oswald", sans-serif;
+}
 footer .lolo .koko {
   text-align: center;
   font-size: 30px;
@@ -87,6 +153,41 @@ footer .lolo .koko .insta {
   margin-left: 30px;
 }
 
+@media (Max-width: 991px) {
+  header .vivir-content .vivir-text .TipografiaSecundaria {
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+  }
+  header .vivir-content .vivir-text .TipografiaParrafo {
+    font-size: 25px;
+    display: none;
+    font-family: "Lora", serif;
+  }
+  header .vivir-content .vivir-img img {
+    display: none;
+  }
+  main .salto-terno {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main .salto-terno .salto-txt {
+    text-align: center;
+    align-items: center;
+    margin-right: 240px;
+  }
+  main .firme {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main .firme .firme-txt {
+    text-align: center;
+    align-items: center;
+  }
+}
 main {
   margin-bottom: 150px;
 }
@@ -106,57 +207,6 @@ main .first_col {
     left: 0;
   }
 }
-@media screen and (max-width: 991px) {
-  .containere2 {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .containere {
-    display: block;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 991px) {
-  .containere2x {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 991px) {
-  .luz {
-    padding: 30px;
-  }
-  .luz-content h2 {
-    padding: 0;
-  }
-  .text-p {
-    padding: 0;
-  }
-  .luz-group {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 991px) {
-  .container-transitar2 {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .content2 {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 991px) {
-  header .vivir-content {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 main .pepe {
   font-size: 15px;
   text-align: center;
@@ -165,12 +215,69 @@ main .pepe .logo {
   width: 350px;
 }
 
-.poper {
-  background-color: skyblue;
+main .producto-main {
+  background-color: #faf6d2;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
-
-.mary {
-  background-color: #FFD1DC;
+main .producto-main .producto-text {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+main .producto-main .producto-text .TipografiaSecundaria {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+}
+main .producto-main .producto-text .TipografiaParrafo {
+  padding: 15px;
+  font-family: "Lora", serif;
+}
+main .libro-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .libro-main .libro-txt {
+  width: 50%;
+  margin-left: 150px;
+}
+main .libro-main .libro-txt .TipografiaSecundaria {
+  text-transform: uppercase;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+main .libro-main .libro-txt .TipografiaParrafo {
+  font-family: "Lora", serif;
+  font-size: 16px;
+}
+main .audio-main {
+  background-color: #fffacd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+main .audio-main .audio-text {
+  width: 80%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+main .audio-main .audio-text .TipografiaSecundaria {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+}
+main .audio-main .audio-text .TipografiaParrafo {
+  padding: 15px;
+  font-family: "Lora", serif;
 }
 
 main section {
@@ -187,27 +294,29 @@ main .container-transitar {
   object-fit: cover;
   height: 500px;
 }
-main .container-transitar .container-txt {
+main .container-transitar .TipografiaSecundaria {
   text-align: center;
   position: relative;
   top: 100px;
   color: white;
   font-size: 70px;
+  font-family: "Oswald", sans-serif;
 }
 main .content {
-  padding: 100px 0;
+  padding: 50px;
   display: flex;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
-main .content .content-txt h1 {
+main .content .TipografiaSecundaria {
   font-size: 40px;
-  color: black;
+  color: #1c0d02;
   position: relative;
   top: 100px;
   text-align: center;
+  font-family: "Oswald", sans-serif;
 }
-main .content .content-txt p {
+main .content .TipografiaParrafo {
   font-size: 20px;
   color: black;
   position: relative;
@@ -215,6 +324,7 @@ main .content .content-txt p {
   left: 40px;
   width: 90%;
   text-align: center;
+  font-family: "Lora", serif;
 }
 main .container-transitar2 {
   background-image: url("../fotos/pexels-hatice-baran-14252564.jpg");
@@ -223,39 +333,41 @@ main .container-transitar2 {
   background-repeat: no-repeat;
   object-fit: cover;
   height: 500px;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 250px;
   margin-top: 250px;
 }
-main .container-transitar2 .container-txt2 {
+main .container-transitar2 .TipografiaSecundaria {
   text-align: center;
-  justify-content: center;
   align-items: center;
-  color: black;
+  color: #572364;
   font-size: 43px;
   text-transform: uppercase;
   position: relative;
   top: 200px;
+  font-family: "Oswald", sans-serif;
 }
 main .content2 {
-  padding: 50px 0;
+  padding: 50px;
   display: flex;
   align-items: center;
   position: relative;
   bottom: 80px;
 }
-main .content2 .content-txt3 h1 {
+main .content2 .TipografiaSecundaria {
   font-size: 40px;
   padding: 30px;
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #1c0d02;
 }
-main .content2 .content-txt2 {
+main .content2 .TipografiaParrafo {
   font-size: 20px;
   color: black;
   padding: 20px;
   text-align: center;
+  font-family: "Lora", serif;
 }
 main #header {
   background: url(../fotos/portada\ femenina\ flores\ vintage\ beige\ .png) top/cover no-repeat;

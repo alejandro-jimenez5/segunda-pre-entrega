@@ -15,32 +15,35 @@ main {
         object-fit: cover;
         height: 500px;
 
-        .container-txt{
+        .TipografiaSecundaria{
             text-align: center;
             position: relative;
             top: 100px;
             color: white;
             font-size: 70px;
+            font-family:$TipografiaSecundaria ;
         }
     }
 
 
     .content{
-        padding: 100px 0;
+        padding: 50px ;
         display: flex;
         align-items: center;
-        margin-bottom: 150px;        
+        margin-bottom: 200px;  
     
-    .content-txt h1{
+    .TipografiaSecundaria{
         font-size: 40px;
-        color: black;
+        color: #1c0d02;
         position: relative;
         top: 100px;
         text-align: center;
+        font-family:$TipografiaSecundaria;
+
     
     }
 
-    .content-txt p{
+    .TipografiaParrafo{
         font-size: 20px;
         color: black;
         position: relative;
@@ -48,10 +51,7 @@ main {
         left: 40px;
         width: 90%;
         text-align: center;
-
-
-
-      
+        font-family: $TipografiaParrafo;
     }
 
 
@@ -65,51 +65,47 @@ main {
     background-repeat: no-repeat;
     object-fit: cover;
     height: 500px;
-    justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 250px;
     margin-top: 250px;
 
-    .container-txt2{
+    .TipografiaSecundaria{
         text-align: center;
-        justify-content: center;
         align-items: center;
-        color: black;
+        color:#572364;
         font-size: 43px;
         text-transform: uppercase;
         position: relative;
         top: 200px;
+        font-family: $TipografiaSecundaria;;
     }
 }
 
 .content2{
-    padding: 50px 0;
+    padding: 50px;
     display: flex;
     align-items: center;
     position: relative;
     bottom: 80px;
 
 
-.content-txt3 h1{
+.TipografiaSecundaria{
     font-size: 40px;
     padding: 30px ;
     text-align: center;
+    font-family:$TipografiaSecundaria;
+    color: #1c0d02;
 
 }
 
-.content-txt2{
+.TipografiaParrafo{
     font-size: 20px;
     color: black;
     padding: 20px;
     text-align: center;
-
-
-
-
-  
+    font-family:$TipografiaParrafo;
 }
-
 
 }
 

@@ -1,8 +1,87 @@
-.poper {
-    background-color: skyblue;
+main { 
+    .producto-main {
+        background-color: #faf6d2;
+
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+        .producto-text {
+            margin-top: 70px;
+            margin-bottom: 50px;
+            width: 80%;
+
+            .TipografiaSecundaria {
+                text-transform: uppercase;
+                font-size: 60px;
+                font-family: $TipografiaSecundaria ;
+            }
+
+            .TipografiaParrafo {
+                padding: 15px;
+                font-family: $TipografiaParrafo;
+            }
+        }
 }
 
 
-.mary {
-    background-color: #FFD1DC;
+.libro-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    .libro-txt {
+        width: 50%;
+        margin-left: 150px;
+
+        .TipografiaSecundaria {
+            text-transform: uppercase;
+            padding: 15px;
+            font-family: $TipografiaSecundaria;
+            font-size: 60px;
+
+        }
+
+        .TipografiaParrafo {
+            font-family: $TipografiaParrafo;
+            font-size: 16px;
+        }
+
+    }
+}
+
+.audio-main {
+    background-color: #fffacd;
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-top: 100px;
+
+
+    .audio-text {
+        width: 80%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+
+
+        .TipografiaSecundaria {
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: $TipografiaSecundaria ;
+        }
+
+        .TipografiaParrafo {
+            padding: 15px;
+            font-family: $TipografiaParrafo;
+        }
+
+
+    }
+
+}
+
 }
