@@ -49,7 +49,7 @@ main .salto-terno {
 }
 main .salto-terno .salto-txt {
   width: 50%;
-  margin-left: 250px;
+  margin-left: 200px;
 }
 main .salto-terno .salto-txt .TipografiaSecundaria {
   text-transform: uppercase;
@@ -59,6 +59,9 @@ main .salto-terno .salto-txt .TipografiaSecundaria {
 main .salto-terno .salto-txt .TipografiaParrafo {
   font-family: "Lora", serif;
   font-size: 16px;
+}
+main .salto-terno .salto-img {
+  margin-left: 50px;
 }
 main .salto-terno .salto-img img {
   width: 400px;
@@ -175,7 +178,7 @@ footer .lolo .koko .insta {
   main .salto-terno .salto-txt {
     text-align: center;
     align-items: center;
-    margin-right: 240px;
+    margin-right: 200px;
   }
   main .firme {
     flex-direction: column;
@@ -246,6 +249,8 @@ main .libro-main {
 main .libro-main .libro-txt {
   width: 50%;
   margin-left: 150px;
+  align-items: center;
+  text-align: center;
 }
 main .libro-main .libro-txt .TipografiaSecundaria {
   text-transform: uppercase;
@@ -280,6 +285,33 @@ main .audio-main .audio-text .TipografiaParrafo {
   font-family: "Lora", serif;
 }
 
+@media (Max-width: 991px) {
+  main .producto-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .producto-main .producto-img img {
+    display: none;
+  }
+  main .libro-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .libro-main .libro-txt {
+    width: 50%;
+    margin-right: 150px;
+  }
+  main .libro-main .libro-img img {
+    display: none;
+  }
+  main .audio-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .audio-main .audio-img img {
+    display: none;
+  }
+}
 main section {
   font-size: 15px;
   text-align: center;
@@ -371,16 +403,6 @@ main .content2 .TipografiaParrafo {
 }
 main #header {
   background: url(../fotos/portada\ femenina\ flores\ vintage\ beige\ .png) top/cover no-repeat;
-}
-main .carousel-inner h1 {
-  font-size: 60px;
-  font-family: var(--lg-font);
-}
-main .carousel-item .btn {
-  border-color: #fff !important;
-}
-main .carousel-item .btn:hover {
-  border-color: var(--pink) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

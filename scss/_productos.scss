@@ -1,7 +1,6 @@
 main { 
     .producto-main {
         background-color: #faf6d2;
-
         display: flex;
         flex-direction: row;
         padding-bottom: 100px;
@@ -36,6 +35,8 @@ main {
     .libro-txt {
         width: 50%;
         margin-left: 150px;
+        align-items: center;
+        text-align: center;
 
         .TipografiaSecundaria {
             text-transform: uppercase;
@@ -85,3 +86,61 @@ main {
 }
 
 }
+
+@media (Max-width:991px) {
+
+    main{
+        .producto-main{
+            flex-direction: column;
+            align-items: center;
+
+            .producto-img img{
+                display: none;
+            }
+    }
+
+
+    .libro-main{
+        flex-direction:column;
+        align-items: center;
+
+        .libro-txt{
+            width: 50%;
+            margin-right: 150px;
+           
+        }
+
+        .libro-img img{
+            display: none;
+        }
+
+    }
+
+
+    .audio-main{
+        flex-direction: column;
+        align-items: center;
+
+        .audio-img img{
+            display: none;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ }
