@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 header {
   background-color: white;
 }
@@ -36,7 +41,7 @@ header .vivir-content .vivir-text .TipografiaParrafo {
 }
 header .vivir-content .vivir-img img {
   width: 450px;
-  margin-inline-start: 300px;
+  margin-inline-start: 200px;
 }
 
 main .salto-terno {
