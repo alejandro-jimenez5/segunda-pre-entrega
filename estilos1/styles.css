@@ -40,7 +40,7 @@ header .vivir-content .vivir-text .TipografiaParrafo {
   font-family: "Lora", serif;
 }
 header .vivir-content .vivir-img img {
-  width: 450px;
+  width: 400px;
   margin-inline-start: 200px;
 }
 
@@ -303,7 +303,7 @@ main .audio-main .audio-text .TipografiaParrafo {
     align-items: center;
   }
   main .libro-main .libro-txt {
-    width: 50%;
+    width: 80%;
     margin-right: 150px;
   }
   main .libro-main .libro-img img {
@@ -345,7 +345,7 @@ main .content {
   align-items: center;
   margin-bottom: 200px;
 }
-main .content .TipografiaSecundaria {
+main .content .content-txt .TipografiaSecundaria {
   font-size: 40px;
   color: #1c0d02;
   position: relative;
@@ -353,7 +353,7 @@ main .content .TipografiaSecundaria {
   text-align: center;
   font-family: "Oswald", sans-serif;
 }
-main .content .TipografiaParrafo {
+main .content .content-txt .TipografiaParrafo {
   font-size: 20px;
   color: black;
   position: relative;
@@ -408,6 +408,16 @@ main .content2 .TipografiaParrafo {
 }
 main #header {
   background: url(../fotos/portada\ femenina\ flores\ vintage\ beige\ .png) top/cover no-repeat;
+}
+
+@media (Max-width: 991px) {
+  .content .TipografiaSecundaria {
+    font-family: "Oswald", sans-serif;
+    margin-left: 50px;
+  }
+  .content .TipografiaParrafo {
+    font-family: "Lora", serif;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
